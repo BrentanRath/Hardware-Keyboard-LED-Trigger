@@ -23,7 +23,7 @@ print(f"Hooked into local keyboard named: {keyboard.name}\npress any key (or dro
 try:
 	# this makes it so the keyboard does not... like... input stuff as it is a glorfied level
 	keyboard.grab()
-	for event in keyboar.real_loop():
+	for event in keyboard.read_loop():
 		if event.type == evdev.ecodes.EV_KEY:
 			key_event = evdev.categorize(event)
 				# turns it on when it is pressed, off when it is not, shrimply simple
@@ -31,7 +31,7 @@ try:
 				led.on()
 			elif key_event.keystate == key_event.key_up:
 				led.off()
-except KeyboardInput:
+except KeyboardInterrupt:
 	print("Exiting the keyboard lock phase (probs should unplug the keyboard")
 finally:
 	keyboard.ungrab()
