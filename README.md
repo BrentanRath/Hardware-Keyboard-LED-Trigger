@@ -12,7 +12,7 @@ When any key is pressed, it activates an LED connected to the Raspberry Pi 4 B's
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/BrentanRath/engineering-project.git](https://github.com/BrentanRath/engineering-project.git)
+   git clone [https://github.com/BrentanRath/Hardware-Keyboard-LED-Trigger](https://github.com/BrentanRath/Hardware-Keyboard-LED-Trigger)
    cd engineering-project
    ```
 
@@ -44,5 +44,5 @@ sudo ./venv/bin/python keyboard_led.py
 * **To trigger:** Press any key on the physical USB keyboard (or in my case, drop something on it, not something 56.2 lbs though, don't hurt the cutie!)
 * **To stop:** Press `Ctrl+C` in your SSH terminal, or simply unplug the USB keyboard.
 * **To test** Run the led_test.py file to see if your led is working or not, this is to see if your wiring and hardware are correct.
-* **To find the right pins** check this image [![RasPi4PinLayout](./raspi4pinlayout.png)]
+* **To find the right pins** check this image [![RasPi4PinLayout](./raspi4pinlayout.png)](https://raw.githubusercontent.com/BrentanRath/Hardware-Keyboard-LED-Trigger/refs/heads/main/raspi4pinlayout.png)
 
