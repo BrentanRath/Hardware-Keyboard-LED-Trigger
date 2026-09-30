@@ -1,4 +1,5 @@
-import evdev sys
+import evdev
+import sys
 from gpiozero import LED
 
 led = LED(17) # pin 11 (i hope)
