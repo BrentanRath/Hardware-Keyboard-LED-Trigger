@@ -1,6 +1,7 @@
 import evdev
 import sys
 import select
+import time
 from gpiozero import LED
 
 led = LED(17) # this is pin 11
@@ -30,6 +31,7 @@ try:
                 if event.type == evdev.ecodes.EV_KEY:
                     key_event = evdev.categorize(event)
                     if key_event.keystate == key_event.key_down:
+			time.sleep(6)
                         led.on()
 except OSError:
     print("you unplugged the keyboard, or something did idk")
