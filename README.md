@@ -54,7 +54,6 @@ sudo ./venv/bin/python keyboard_led.py
 - [] make README.md look pretty for github
 - [] detial OS/packages used for process so people can do it from scratch (plus all exact version)
 - [] record video of it working
-
-*btw I challanged myself and used no LLM's or AI during this! while it is not the smart thing to do for coding, and I know how to code using LLM's quite effectively and efficiently, learning is different"
-
 - [] add reasoning behind it (engineering project) + video of it in the project
+
+*btw I challanged myself and used no LLM's or AI during this! while it is not the smart thing to do for coding, and I know how to code using LLM's quite effectively and efficiently, learning is different*
