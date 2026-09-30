@@ -31,9 +31,8 @@ try:
                     key_event = evdev.categorize(event)
                     if key_event.keystate == key_event.key_down:
                         led.on()
-                    elif key_event.keystate == key_event.key_up:
-                        led.off()
-
+except OSError:
+    print("you unplugged the keyboard, or something did idk")
 except KeyboardInterrupt:
     print("\nExiting the keyboard lock phase... at last! (kidding smth went wrong, maybe)")
 finally:
